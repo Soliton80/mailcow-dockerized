@@ -334,7 +334,7 @@ MAILDIR_GC_TIME=7200
 #ADDITIONAL_SAN=imap.*,srv1.example.com
 #
 
-ADDITIONAL_SAN=
+ADDITIONAL_SAN=mail.abs-stroy.ru,mail.topor.ru,mail.lesnik.ru
 
 # Additional server names for mailcow UI
 #
