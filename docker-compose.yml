@@ -648,14 +648,14 @@ volumes:
     driver: local
     driver_opts:
       type: nfs
-      o: addr=195.91.221.156,rw
-      device: :/volume2/server_data
+      o: "addr=195.91.221.156,rsize=65536,wsize=65536,timeo=14,tcp,rw,noatime"
+      device: :/volume2/server_data/vmail-vol-1
   vmail-index-vol-1:
     driver: local
     driver_opts:
       type: nfs
-      o: addr=195.91.221.156,rw
-      device: :/volume2/server_data
+      o: "addr=195.91.221.156,rsize=65536,wsize=65536,timeo=14,tcp,rw,noatime"
+      device: :/volume2/server_data/vmail-index-vol-1
   mysql-vol-1:
   mysql-socket-vol-1:
   redis-vol-1:
