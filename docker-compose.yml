@@ -664,15 +664,5 @@ volumes:
   postfix-vol-1:
   crypt-vol-1:
   sogo-web-vol-1:
-    driver: local
-    driver_opts:
-      type: nfs
-      o: "addr=195.91.221.156,rw,nordirplus,noatime"
-      device: :/volume2/server_data
   sogo-userdata-backup-vol-1:
-    driver: local
-    driver_opts:
-      type: nfs
-      o: "addr=195.91.221.156,rw,nordirplus,noatime"
-      device: :/volume2/server_data
   clamd-db-vol-1:
