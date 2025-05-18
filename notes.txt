@@ -24,7 +24,17 @@ ufw allow 4190
 II clone mailcow to /opt
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+execute as root su
+
 
 cd /opt && git clone https://github.com/Soliton80/mailcow-dockerized.git
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+III create mailcow.conf
+
+cd mailcow-dockerized 
+./generate_config.sh
+
+

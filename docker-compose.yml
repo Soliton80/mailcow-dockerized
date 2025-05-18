@@ -645,17 +645,7 @@ networks:
 
 volumes:
   vmail-vol-1:
-    driver: local
-    driver_opts:
-      type: nfs
-      o: "addr=195.91.221.156,rw,nordirplus,noatime"
-      device: :/volume2/server_data
   vmail-index-vol-1:
-    driver: local
-    driver_opts:
-      type: nfs
-      o: "addr=195.91.221.156,rw,nordirplus,noatime"
-      device: :/volume2/server_data
   mysql-vol-1:
   mysql-socket-vol-1:
   redis-vol-1:
