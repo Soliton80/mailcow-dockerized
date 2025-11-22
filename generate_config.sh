@@ -250,6 +250,13 @@ DBUSER=mailcow
 DBPASS=$(LC_ALL=C </dev/urandom tr -dc A-Za-z0-9 2> /dev/null | head -c 28)
 DBROOT=$(LC_ALL=C </dev/urandom tr -dc A-Za-z0-9 2> /dev/null | head -c 28)
 
+
+# ------------------------------
+# REDIS configuration
+# ------------------------------
+
+REDISPASS=$(LC_ALL=C </dev/urandom tr -dc A-Za-z0-9 2> /dev/null | head -c 28)
+
 # ------------------------------
 # HTTP/S Bindings
 # ------------------------------
@@ -334,8 +341,7 @@ MAILDIR_GC_TIME=7200
 #ADDITIONAL_SAN=imap.*,srv1.example.com
 #
 
-ADDITIONAL_SAN=mail.abs-stroy.ru,mail.topor.ru,mail.lesnik.ru,mail.antiseptik.ru,mail.borontov.ru,mail.domabs.ru,mail.gipsovolokno.ru,mail.khabarov.ru,mail.kotelskoe.ru,mail.onlinevezde.ru,mail.plans.center,mail.stroysam.ru,mail.sukhareva.life
-
+ADDITIONAL_SAN=mail.abs-stroy.ru,mail.topor.ru,mail.lesnik.ru,mail.antiseptik.ru,mail.borontov.ru,mail.domabs.ru,mail.gipsovolokno.ru,mail.khabarov.ru,mail.kotelskoe.ru,mail.onlinevezde.ru,mail.plans.center,mail.stroysam.ru,mail.sukhareva.life,postmaster.onlinevezde.ru
 # Additional server names for mailcow UI
 #
 # Specify alternative addresses for the mailcow UI to respond to
